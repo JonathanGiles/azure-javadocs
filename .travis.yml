@@ -1,3 +1,21 @@
 language: java
+
+jdk:
+  - oraclejdk9
+
+os:
+  - linux
+
+branches:
+  only:
+    - master
+
+cache:
+  directories:
+  - $HOME/.gradle
+
 install: ./clone-repos.sh
-script: "mvn site"
+
+script:
+  - mvn site
+  - ./gradlew -Dorg.ajoberstar.grgit.auth.username=${username} -Dorg.ajoberstar.grgit.auth.password=${password} publishGhPages
