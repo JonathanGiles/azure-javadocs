@@ -4,17 +4,15 @@ buildscript {
     }
 
     dependencies {
-        //classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
-        //classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-        //classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
-        classpath 'org.ajoberstar:gradle-git:1.6.0-rc.1'
+        //classpath 'org.ajoberstar:gradle-git:1.6.0-rc.1'
+        classpath 'org.ajoberstar:gradle-git-publish:0.3.2'
     }
 }
 
-//apply plugin: 'org.asciidoctor.convert'
-apply plugin: 'org.ajoberstar.github-pages'
-//apply plugin: 'com.github.ben-manes.versions'
+//apply plugin: 'org.ajoberstar.github-pages'
+apply plugin: 'org.ajoberstar.git-publish'
 
+/*
 githubPages {
   repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
   pages {
@@ -23,4 +21,21 @@ githubPages {
       into '.'
     }
   }
+}*/
+
+gitPublish {
+    repoUri = 'git@github.com/JonathanGiles/azure-javadocs.git'
+    branch = 'gh-pages'
+    repoDir = file("$buildDir")
+
+    // what to publish, this is a standard CopySpec
+    contents {
+        from(file('target/site/apidocs')) {
+          include '**'
+          into '.'
+        }
+    }
+
+    // message used when committing changes
+    commitMessage = 'Publishing latest Azure JavaDocs'
 }
