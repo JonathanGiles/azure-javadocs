@@ -1,0 +1,26 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        //classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
+        //classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+        //classpath 'org.asciidoctor:asciidoctorj-pdf:1.5.0-alpha.15'
+        classpath 'org.ajoberstar:gradle-git:1.6.0-rc.1'
+    }
+}
+
+//apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'org.ajoberstar.github-pages'
+//apply plugin: 'com.github.ben-manes.versions'
+
+githubPages {
+  repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
+  pages {
+    from(file('target/site/apidocs')) {
+      include '**'
+      into '.'
+    }
+  }
+}
