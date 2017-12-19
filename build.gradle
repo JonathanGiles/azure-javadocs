@@ -24,7 +24,7 @@ githubPages {
 }*/
 
 gitPublish {
-    repoUri = 'git@github.com/JonathanGiles/azure-javadocs.git'
+    repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
     branch = 'gh-pages'
     repoDir = file("$buildDir")
 
