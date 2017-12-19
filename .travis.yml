@@ -19,4 +19,4 @@ install: ./clone-repos.sh
 
 script:
   - mvn site
-  - gradle -Dorg.ajoberstar.grgit.auth.username=${username} -Dorg.ajoberstar.grgit.auth.password=${password} publishGhPages
+  - ./gradlew -Dorg.ajoberstar.grgit.auth.username=${username} -Dorg.ajoberstar.grgit.auth.password=${password} publishGhPages
