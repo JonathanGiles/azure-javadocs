@@ -27,11 +27,11 @@ githubPages {
 gitPublish {
     repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
     branch = 'gh-pages'
-    repoDir = file("target/site") 
+    //repoDir = file("target/site") 
 
     // what to publish, this is a standard CopySpec
     contents {
-        from(file('apidocs')) {
+        from(file('target/site/apidocs')) {
           include '**'
           into '.'
         }
