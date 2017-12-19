@@ -10,7 +10,7 @@
     <module>azure-service-bus-java</module>
     <module>azure-storage-java</module>
     <module>azure-iot-sdk-java</module>
-    <module>azure-documentdb-java</module>
+    <!--<module>azure-documentdb-java</module>-->
     <module>azure-event-hubs-java</module>
     <module>azure-libraries-for-java</module>
     <module>azure-data-lake-store-java</module>
