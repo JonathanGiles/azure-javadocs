@@ -8,17 +8,25 @@
   <modules>
     <module>azure-functions-java-worker</module>
     <module>azure-service-bus-java</module>
-    <module>azure-storage-java</module>
-    <!--<module>azure-libraries-for-java</module>-->
     <module>azure-data-lake-store-java</module>
-    <module>azure-keyvault-java</module>
+    <module>azure-event-hubs-java</module>
+    <module>azure-iot-sdk-java</module>
+
+    <!-- testing -->
     
-    <!--<module>azure-iot-sdk-java</module>-->
-    <!--<module>azure-documentdb-java</module>-->
-    <!--<module>azure-event-hubs-java</module>
-    -->
+
+    <!-- Untested -->
+    
+
+    <!-- Repos that fail to compile -->
+    <!-- <module>azure-libraries-for-java</module> -->
+    <!-- <module>azure-keyvault-java</module> -->
+
+    <!-- Repos with JavaDoc errors that fail build -->
+    <!-- <module>azure-storage-java</module> -->
+    <!-- <module>azure-batch-sdk-for-java</module> -->
   </modules>
-  
+
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -26,6 +34,25 @@
 
   <build>
     <plugins>
+      <!--
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <additionalparam>${javadoc.opts}</additionalparam>
+            </configuration>
+            <reportSets>
+                <reportSet>
+                    <id>aggregate</id>
+                    <reports>
+                        <report>aggregate</report>
+                    </reports>
+                </reportSet>
+            </reportSets>
+        </plugin>
+      -->
+
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
@@ -35,7 +62,10 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.9</version>
+                        <version>3.0.0</version>
+                        <configuration>
+                            <additionalparam>${javadoc.opts}</additionalparam>
+                        </configuration>
                         <reportSets>
                             <reportSet>
                                 <id>aggregate</id>
@@ -48,6 +78,7 @@
                 </reportPlugins>
             </configuration>
         </plugin>
+
     </plugins>
 </build>
 </project>
