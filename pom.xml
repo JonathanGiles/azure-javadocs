@@ -9,7 +9,7 @@
     <module>azure-functions-java-worker</module>
     <module>azure-service-bus-java</module>
     <module>azure-storage-java</module>
-    <module>azure-libraries-for-java</module>
+    <!--<module>azure-libraries-for-java</module>-->
     <module>azure-data-lake-store-java</module>
     <module>azure-keyvault-java</module>
     
