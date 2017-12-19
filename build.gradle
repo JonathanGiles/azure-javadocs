@@ -26,7 +26,6 @@ githubPages {
 gitPublish {
     repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
     branch = 'gh-pages'
-    repoDir = file("$buildDir")
 
     // what to publish, this is a standard CopySpec
     contents {
