@@ -4,15 +4,15 @@ buildscript {
     }
 
     dependencies {
-        //classpath 'org.ajoberstar:gradle-git:1.6.0-rc.1'
-        classpath 'org.ajoberstar:gradle-git-publish:0.3.2'
+        classpath 'org.ajoberstar:gradle-git:1.6.0-rc.1'
+        //classpath 'org.ajoberstar:gradle-git-publish:0.3.2'
     }
 }
 
-//apply plugin: 'org.ajoberstar.github-pages'
-apply plugin: 'org.ajoberstar.git-publish'
+apply plugin: 'org.ajoberstar.github-pages'
+//apply plugin: 'org.ajoberstar.git-publish'
 
-/*
+
 githubPages {
   repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
   pages {
@@ -21,8 +21,9 @@ githubPages {
       into '.'
     }
   }
-}*/
+}
 
+/*
 gitPublish {
     repoUri = 'https://github.com/JonathanGiles/azure-javadocs.git'
     branch = 'gh-pages'
@@ -38,3 +39,4 @@ gitPublish {
     // message used when committing changes
     commitMessage = 'Publishing latest Azure JavaDocs'
 }
+*/
