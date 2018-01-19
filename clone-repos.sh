@@ -5,7 +5,9 @@ git clone https://github.com/Azure/azure-functions-java-worker.git
 git clone https://github.com/Azure/azure-service-bus-java.git
 git clone https://github.com/Azure/azure-data-lake-store-java.git
 git clone https://github.com/Azure/azure-event-hubs-java.git
-git clone https://github.com/Azure/azure-iot-sdk-java.git
+
+# Fails to build under JDK 9
+# git clone https://github.com/Azure/azure-iot-sdk-java.git
 
 # Untested
 

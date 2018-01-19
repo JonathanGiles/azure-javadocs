@@ -10,7 +10,9 @@
     <module>azure-service-bus-java</module>
     <module>azure-data-lake-store-java</module>
     <module>azure-event-hubs-java</module>
-    <module>azure-iot-sdk-java</module>
+
+    <!-- Fails to build under JDK 9 -->
+    <!-- <module>azure-iot-sdk-java</module> -->
 
     <!-- Untested -->
 
@@ -34,7 +36,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
-            <version>3.3</version>
+            <version>3.7</version>
             <configuration>
                 <reportPlugins>
                     <plugin>
@@ -43,7 +45,7 @@
                         <version>3.0.0</version>
                         <configuration>
                             <additionalparam>${javadoc.opts}</additionalparam>
-                            <excludePackageNames>samples.*:tools.*</excludePackageNames>
+                            <excludePackageNames>samples.*;tools.*;*.implementation.*</excludePackageNames>
                         </configuration>
                         <reportSets>
                             <reportSet>
