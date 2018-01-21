@@ -1,9 +1,12 @@
 # JavaDocs for Azure Java SDKs
-Exploring the possibility of building a single, automated JavaDoc for all Azure Java APIs. This project aims to reach JDK 9 build compliance for both building (using `mvn clean package`) and generating Javadoc (using `mvn javadoc:javadoc`). This does not mean that the SDKs are using best practices or the latest JDK 8 and 9 features, simply that they are buildable and able to generate documentation.
 
-When a project achieves the ability to generate JDK 9 documentation (without the lint checking disabled), it is added to the clone-repos.sh and pom.xml files in this repo, so that it is included in the daily build of JavaDocs.
+[Read the generated JavaDocs for all valid Java Azure SDKs now](https://jonathangiles.github.io/azure-javadocs/index.html?overview-summary.html).
 
-The latest daily build of all compliant JavaDoc for Azure Java APIs can be found here: https://jonathangiles.github.io/azure-javadocs/
+## Overview
+
+This project explores the possibility of building a single, automated JavaDoc for all Azure Java APIs. This project aims to reach JDK 9 build compliance for both building (using `mvn clean package`) and generating Javadoc (using `mvn javadoc:javadoc`). This does not mean that the SDKs are using best practices or the latest JDK 8 and 9 features, simply that they are buildable and able to generate documentation.
+
+When a project achieves the ability to generate JDK 9 documentation (without the lint checking disabled), it is added to the clone-repos.sh and pom.xml files in this repo, so that it is included in the daily build of JavaDocs. The latest daily build of all compliant JavaDoc for Azure Java APIs is [available online](https://jonathangiles.github.io/azure-javadocs/index.html?overview-summary.html). 
 
 ## Build Status of SDKs
 
