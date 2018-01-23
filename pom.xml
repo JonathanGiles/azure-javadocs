@@ -12,9 +12,10 @@
     <module>azure-event-hubs-java</module>
     <module>azure-keyvault-java</module>
     <module>azure-batch-sdk-for-java</module>
+    <module>azure-iot-sdk-java</module>
 
     <!-- Fails to build under JDK 9 -->
-    <!-- <module>azure-iot-sdk-java</module> -->
+    
 
     <!-- Untested -->
     <!-- Repos that fail to compile -->
