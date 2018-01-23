@@ -7,7 +7,10 @@ git clone https://github.com/Azure/azure-data-lake-store-java.git
 git clone https://github.com/Azure/azure-event-hubs-java.git
 git clone https://github.com/Azure/azure-keyvault-java.git
 git clone https://github.com/Azure/azure-batch-sdk-for-java.git
-git clone https://github.com/Azure/azure-iot-sdk-java.git
+
+# Temporarily using forks that have all fixes applied
+git clone https://github.com/JonathanGiles/azure-iot-sdk-java.git
+git clone https://github.com/JonathanGiles/azure-storage-java.git
 
 # Fails to build under JDK 9
 
@@ -19,5 +22,5 @@ git clone https://github.com/Azure/azure-iot-sdk-java.git
 # git clone https://github.com/Azure/azure-libraries-for-java.git
 
 # Repos with JavaDoc errors that fail build
-# git clone https://github.com/Azure/azure-storage-java.git
+
 # git clone https://github.com/Azure/azure-sdk-for-java.git
