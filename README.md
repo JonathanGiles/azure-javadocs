@@ -1,5 +1,7 @@
 # JavaDocs for Azure Java SDKs
 
+![](https://i0.wp.com/jonathangiles.net/wp-content/uploads/2018/01/BIT_AND_MSFT_DOCS.png?zoom=2&resize=150%2C150 "Doc & Bit")
+
 [Read the generated JavaDocs for all valid Java Azure SDKs now](https://jonathangiles.github.io/azure-javadocs/index.html?overview-summary.html).
 
 [![Build Status](https://travis-ci.org/JonathanGiles/azure-javadocs.svg?branch=master)](https://travis-ci.org/JonathanGiles/azure-javadocs)
