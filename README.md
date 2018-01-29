@@ -3,10 +3,10 @@
 ![](https://i0.wp.com/jonathangiles.net/wp-content/uploads/2018/01/BIT_AND_MSFT_DOCS.png?zoom=2&resize=150%2C150 "Doc & Bit")
 
 
-## Links:
+## Links
 **Read latest generated JavaDocs online (built daily):** [Here](https://jonathangiles.github.io/azure-javadocs/index.html?overview-summary.html)
 
-**Download latest generated JavaDoc jar file (built daily):** [Here](https://jonathangiles.github.io/azure-javadocs/azure-javadocs-0.0.1-SNAPSHOT-javadoc.jar)
+**Download latest generated JavaDoc jar file (built daily):** [Here](https://github.com/JonathanGiles/azure-javadocs/blob/gh-pages/azure-javadocs-0.0.1-SNAPSHOT-javadoc.jar)
 
 **Current build status:** [![Build Status](https://travis-ci.org/JonathanGiles/azure-javadocs.svg?branch=master)](https://travis-ci.org/JonathanGiles/azure-javadocs)
 
