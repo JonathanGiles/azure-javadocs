@@ -34,7 +34,7 @@ gitPublish {
         from(file('target/apidocs')) {
           include '**'
           into '.'
-        },
+        }
         from(file('target')) {
           include '*.jar'
           into '.'
