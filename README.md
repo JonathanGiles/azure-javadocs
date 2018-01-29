@@ -6,7 +6,7 @@
 ## Links
 **Read latest generated JavaDocs online (built daily):** [Here](https://jonathangiles.github.io/azure-javadocs/index.html?overview-summary.html)
 
-**Download latest generated JavaDoc jar file (built daily):** [Here](https://github.com/JonathanGiles/azure-javadocs/blob/gh-pages/azure-javadocs-0.0.1-SNAPSHOT-javadoc.jar)
+**Download latest generated JavaDoc jar file (built daily):** [Here](https://github.com/JonathanGiles/azure-javadocs/raw/gh-pages/azure-javadocs-0.0.1-SNAPSHOT-javadoc.jar)
 
 **Current build status:** [![Build Status](https://travis-ci.org/JonathanGiles/azure-javadocs.svg?branch=master)](https://travis-ci.org/JonathanGiles/azure-javadocs)
 
