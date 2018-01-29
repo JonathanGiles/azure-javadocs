@@ -31,8 +31,12 @@ gitPublish {
 
     // what to publish, this is a standard CopySpec
     contents {
-        from(file('target/site/apidocs')) {
+        from(file('target/apidocs')) {
           include '**'
+          into '.'
+        },
+        from(file('target')) {
+          include '*.jar'
           into '.'
         }
     }

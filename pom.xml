@@ -9,15 +9,12 @@
     <module>azure-functions-java-worker</module>
     <module>azure-service-bus-java</module>
     <module>azure-data-lake-store-java</module>
-    <module>azure-event-hubs-java</module>
+    <!-- <module>azure-event-hubs-java</module> -->
     <module>azure-keyvault-java</module>
     <module>azure-batch-sdk-for-java</module>
     <module>azure-iot-sdk-java</module>
+    <!-- <module>azure-activedirectory-library-for-java</module> -->
 
-    <!-- Fails to build under JDK 9 -->
-    
-
-    <!-- Untested -->
     <!-- Repos that fail to compile -->
     <!-- <module>azure-libraries-for-java</module> -->
 
