@@ -9,7 +9,7 @@
     <module>azure-functions-java-worker</module>
     <module>azure-service-bus-java</module>
     <module>azure-data-lake-store-java</module>
-    <!-- <module>azure-event-hubs-java</module> -->
+    <module>azure-event-hubs-java</module>
     <module>azure-keyvault-java</module>
     <module>azure-batch-sdk-for-java</module>
     <module>azure-iot-sdk-java</module>
