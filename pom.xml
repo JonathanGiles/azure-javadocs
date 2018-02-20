@@ -14,9 +14,9 @@
     <module>azure-batch-sdk-for-java</module>
     <module>azure-iot-sdk-java</module>
     <module>azure-libraries-for-java</module>
-    <module>azure-activedirectory-library-for-java</module>
 
-    <!-- Repos that fail to compile -->
+    <!-- Repos that fail to compile under JDK 9 -->
+    <!-- <module>azure-activedirectory-library-for-java</module> -->
 
     <!-- Repos with JavaDoc errors that fail build -->
     <!-- <module>azure-storage-java</module> -->
