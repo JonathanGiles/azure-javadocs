@@ -13,10 +13,10 @@
     <module>azure-keyvault-java</module>
     <module>azure-batch-sdk-for-java</module>
     <module>azure-iot-sdk-java</module>
-    <!-- <module>azure-activedirectory-library-for-java</module> -->
+    <module>azure-libraries-for-java</module>
+    <module>azure-activedirectory-library-for-java</module>
 
     <!-- Repos that fail to compile -->
-    <!-- <module>azure-libraries-for-java</module> -->
 
     <!-- Repos with JavaDoc errors that fail build -->
     <!-- <module>azure-storage-java</module> -->
@@ -32,31 +32,13 @@
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-site-plugin</artifactId>
-            <version>3.7</version>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>3.0.0</version>
             <configuration>
-                <reportPlugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>3.0.0</version>
-                        <configuration>
-                            <additionalparam>${javadoc.opts}</additionalparam>
-                            <excludePackageNames>samples.*;tools.*;*.implementation.*</excludePackageNames>
-                        </configuration>
-                        <reportSets>
-                            <reportSet>
-                                <id>aggregate</id>
-                                <reports>
-                                    <report>aggregate</report>
-                                </reports>
-                            </reportSet>
-                        </reportSets>
-                    </plugin>
-                </reportPlugins>
+                <additionalparam>${javadoc.opts}</additionalparam>
+                <excludePackageNames>*.samples.*:tools.*:*.implementation.*</excludePackageNames>
             </configuration>
         </plugin>
-
     </plugins>
 </build>
 </project>

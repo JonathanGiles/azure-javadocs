@@ -21,5 +21,6 @@ git:
 install: ./clone-repos.sh
 
 script:
-  - mvn javadoc:aggregate-jar
+  - mvn install -DskipTests=true
+  - mvn javadoc:aggregate-jar -DskipTests=true
   - ./gradlew -Dorg.ajoberstar.grgit.auth.username=${username} -Dorg.ajoberstar.grgit.auth.password=${password} gitPublishPush
