@@ -1,44 +1,84 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.microsoft.azure</groupId>
-  <artifactId>azure-javadocs</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-javadocs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <modules>
-    <module>azure-functions-java-worker</module>
-    <module>azure-service-bus-java</module>
-    <module>azure-data-lake-store-java</module>
-    <module>azure-event-hubs-java</module>
-    <module>azure-keyvault-java</module>
-    <module>azure-batch-sdk-for-java</module>
-    <module>azure-iot-sdk-java</module>
-    <module>azure-libraries-for-java</module>
+    <modules>
+        <module>azure-functions-java-worker</module>
+        <module>azure-service-bus-java</module>
+        <module>azure-data-lake-store-java</module>
+        <module>azure-event-hubs-java</module>
+        <module>azure-keyvault-java</module>
+        <module>azure-batch-sdk-for-java</module>
+        <module>azure-iot-sdk-java</module>
 
-    <!-- Repos that fail to compile under JDK 9 -->
-    <!-- <module>azure-activedirectory-library-for-java</module> -->
+        <!-- Repos that fail to compile under JDK 9 -->
+        <!--<module>azure-activedirectory-library-for-java</module>-->
 
-    <!-- Repos with JavaDoc errors that fail build -->
-    <!-- <module>azure-storage-java</module> -->
-    <!-- <module>azure-sdk-for-java</module> -->
-  </modules>
+        <!-- JavaDoc failure due to https://bugs.openjdk.java.net/browse/JDK-8188248 under JDK 9+ (works under JDK 8) -->
+        <!--<module>azure-libraries-for-java</module>-->
 
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+        <!-- Repos with JavaDoc errors that fail build -->
+        <!--<module>azure-storage-java</module>-->
+        <!-- <module>azure-sdk-for-java</module> -->
+    </modules>
 
-  <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.0.0</version>
-            <configuration>
-                <additionalparam>${javadoc.opts}</additionalparam>
-                <excludePackageNames>*.samples.*:tools.*:*.implementation.*</excludePackageNames>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <additionalparam>${javadoc.opts}</additionalparam>
+                    <excludePackageNames>*.samples.*:tools.*:*.implementation.*</excludePackageNames>
+                    <groups>
+                        <group>
+                            <title>Azure Batch</title>
+                            <packages>com.microsoft.azure.batch*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Datalake Store</title>
+                            <packages>com.microsoft.azure.datalake.store*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Event Hubs</title>
+                            <packages>com.microsoft.azure.eventhubs*:com.microsoft.azure.eventprocessorhost</packages>
+                        </group>
+                        <group>
+                            <title>Azure Key Vault</title>
+                            <packages>com.microsoft.azure.keyvault*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Management</title>
+                            <packages>com.microsoft.azure.management*</packages>
+                        </group>
+                        <group>
+                            <title>Azure IoT</title>
+                            <packages>com.microsoft.azure.sdk.iot*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Functions</title>
+                            <packages>com.microsoft.azure.serverless.functions*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Service Bus</title>
+                            <packages>com.microsoft.azure.servicebus*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Storage</title>
+                            <packages>com.microsoft.azure.storage*</packages>
+                        </group>
+                    </groups>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
