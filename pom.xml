@@ -13,12 +13,10 @@
         <module>azure-keyvault-java</module>
         <module>azure-batch-sdk-for-java</module>
         <module>azure-iot-sdk-java</module>
+        <module>azure-libraries-for-java</module>
 
         <!-- Repos that fail to compile under JDK 9 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
-
-        <!-- JavaDoc failure due to https://bugs.openjdk.java.net/browse/JDK-8188248 under JDK 9+ (works under JDK 8) -->
-        <!--<module>azure-libraries-for-java</module>-->
 
         <!-- Repos with JavaDoc errors that fail build -->
         <!--<module>azure-storage-java</module>-->

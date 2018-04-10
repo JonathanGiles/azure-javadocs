@@ -6,6 +6,9 @@ jdk:
 os:
   - linux
 
+git:
+  depth: 1
+
 branches:
   only:
     - master
@@ -14,9 +17,6 @@ cache:
   directories:
   - $HOME/.gradle
   - $HOME/.m2
-  
-git:
-  depth: false
 
 install: ./clone-repos.sh
 
