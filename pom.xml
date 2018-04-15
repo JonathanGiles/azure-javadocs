@@ -12,14 +12,14 @@
         <module>azure-event-hubs-java</module>
         <module>azure-keyvault-java</module>
         <module>azure-batch-sdk-for-java</module>
-        <module>azure-iot-sdk-java</module>
+        <!-- <module>azure-iot-sdk-java</module> -->
         <module>azure-libraries-for-java</module>
+        <!-- <module>azure-storage-java</module> -->
 
         <!-- Repos that fail to compile under JDK 9 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
 
         <!-- Repos with JavaDoc errors that fail build -->
-        <!--<module>azure-storage-java</module>-->
         <!-- <module>azure-sdk-for-java</module> -->
     </modules>
 
@@ -36,7 +36,12 @@
                 <version>3.0.0</version>
                 <configuration>
                     <additionalparam>${javadoc.opts}</additionalparam>
-                    <excludePackageNames>*.samples.*:tools.*:*.implementation.*</excludePackageNames>
+                    <excludePackageNames>
+                        *.samples.*:
+                        tools.*:
+                        *.implementation.*:
+                        com.microsoft.azure.storage.core.*
+                    </excludePackageNames>
                     <groups>
                         <group>
                             <title>Azure Batch</title>
