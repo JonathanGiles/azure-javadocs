@@ -39,8 +39,12 @@ gitPublish {
           include '*.jar'
           into '.'
         }
+        from(file('target/checkstyle/html')) {
+            include '**'
+            into './checkstyle'
+        }
     }
 
     // message used when committing changes
-    commitMessage = 'Publishing latest Azure JavaDocs'
+    commitMessage = 'Publishing latest Azure JavaDocs and CheckStyle output'
 }
