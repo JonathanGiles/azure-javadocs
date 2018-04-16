@@ -40,7 +40,8 @@
                         *.samples.*:
                         tools.*:
                         *.implementation.*:
-                        com.microsoft.azure.storage.core.*
+                        com.microsoft.azure.storage.core.*:
+                        com.microsoft.azure.webjobs.*
                     </excludePackageNames>
                     <groups>
                         <group>
