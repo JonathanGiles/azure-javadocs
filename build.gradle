@@ -41,7 +41,7 @@ gitPublish {
         }
         from(file('target/checkstyle/html')) {
             include '**'
-            into './checkstyle'
+            into 'checkstyle'
         }
     }
 
