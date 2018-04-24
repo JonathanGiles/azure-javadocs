@@ -13,7 +13,6 @@
         <module>azure-keyvault-java</module>
         <module>azure-batch-sdk-for-java</module>
         <module>azure-iot-sdk-java</module>
-        <module>azure-libraries-for-java</module>
         <module>azure-storage-java</module>
         <module>azure-sdk-for-java</module>
 
@@ -21,6 +20,7 @@
         <!--<module>azure-activedirectory-library-for-java</module>-->
 
         <!-- Repos with JavaDoc errors that fail build -->
+        <!-- <module>azure-libraries-for-java</module> -->
     </modules>
 
     <properties>
