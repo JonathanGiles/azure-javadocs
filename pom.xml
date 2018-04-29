@@ -6,21 +6,22 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>azure-functions-java-worker</module>
-        <module>azure-service-bus-java</module>
+        <module>azure-cosmosdb-java</module>
         <module>azure-data-lake-store-java</module>
         <module>azure-event-hubs-java</module>
+        <module>azure-functions-java-worker</module>
         <module>azure-keyvault-java</module>
         <module>azure-batch-sdk-for-java</module>
         <module>azure-iot-sdk-java</module>
         <module>azure-storage-java</module>
-        <module>azure-sdk-for-java</module>
-
+        <module>azure-libraries-for-java</module>
+        
         <!-- Repos that fail to compile under JDK 9 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
+        <!-- <module>azure-service-bus-java</module> -->
 
         <!-- Repos with JavaDoc errors that fail build -->
-        <!-- <module>azure-libraries-for-java</module> -->
+        <!-- <module>azure-sdk-for-java</module> -->
     </modules>
 
     <properties>
@@ -54,13 +55,19 @@
                         *.samples.*:
                         tools.*:
                         *.implementation.*:
+                        *.internal.*:
                         com.microsoft.azure.storage.core.*:
-                        com.microsoft.azure.webjobs.*
+                        com.microsoft.azure.webjobs.*:
+                        com.microsoft.azure.cosmosdb.benchmark
                     </excludePackageNames>
                     <groups>
                         <group>
                             <title>Azure Batch</title>
                             <packages>com.microsoft.azure.batch*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Cosmos DB SQL API</title>
+                            <packages>com.microsoft.azure.cosmosdb*</packages>
                         </group>
                         <group>
                             <title>Azure Datalake Store</title>
@@ -71,20 +78,20 @@
                             <packages>com.microsoft.azure.eventhubs*:com.microsoft.azure.eventprocessorhost</packages>
                         </group>
                         <group>
-                            <title>Azure Key Vault</title>
-                            <packages>com.microsoft.azure.keyvault*</packages>
-                        </group>
-                        <group>
-                            <title>Azure Management</title>
-                            <packages>com.microsoft.azure.management*</packages>
+                            <title>Azure Functions</title>
+                            <packages>com.microsoft.azure.serverless.functions*</packages>
                         </group>
                         <group>
                             <title>Azure IoT</title>
                             <packages>com.microsoft.azure.sdk.iot*</packages>
                         </group>
                         <group>
-                            <title>Azure Functions</title>
-                            <packages>com.microsoft.azure.serverless.functions*</packages>
+                            <title>Azure Key Vault</title>
+                            <packages>com.microsoft.azure.keyvault*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Management</title>
+                            <packages>com.microsoft.azure.management*</packages>
                         </group>
                         <group>
                             <title>Azure Service Bus</title>
