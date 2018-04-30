@@ -65,6 +65,8 @@
                         com.microsoft.azure.webjobs.*:
                         com.microsoft.azure.cosmosdb.benchmark:
                         com.microsoft.azure.storage.core:
+                        com.microsoft.azure.eventhubs.extensions.appender:
+                        com.microsoft.azure.eventhubs.impl:
                         *.iot.common.*:
                         *.iot.deps.*:
                         *.iot.device.auth:
