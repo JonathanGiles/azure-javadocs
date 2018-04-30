@@ -15,7 +15,7 @@
         <module>azure-iot-sdk-java</module>
         <module>azure-storage-java</module>
         <module>azure-libraries-for-java</module>
-        
+
         <!-- Repos that fail to compile under JDK 9 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
         <!-- <module>azure-service-bus-java</module> -->
@@ -58,7 +58,23 @@
                         *.internal.*:
                         com.microsoft.azure.storage.core.*:
                         com.microsoft.azure.webjobs.*:
-                        com.microsoft.azure.cosmosdb.benchmark
+                        com.microsoft.azure.cosmosdb.benchmark:
+                        com.microsoft.azure.storage.core:
+                        *.iot.common.*:
+                        *.iot.deps.*:
+                        *.iot.device.auth:
+                        *.iot.device.fileupload:
+                        *.iot.device.net:
+                        *.iot.device.transport:
+                        *.iot.device.transport.amqps:
+                        *.iot.device.transport.https:
+                        *.iot.device.transport.mqtt:
+                        *.iot.provisioning.security.hsm:
+                        *.iot.provisioning.service.auth:
+                        *.iot.provisioning.service.configs:
+                        *.iot.provisioning.service.contract:
+                        *.iot.service.auth:
+                        *.iot.service.transport.*
                     </excludePackageNames>
                     <groups>
                         <group>
