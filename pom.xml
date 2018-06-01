@@ -9,7 +9,7 @@
         <module>azure-cosmosdb-java</module>
         <module>azure-data-lake-store-java</module>
         <module>azure-event-hubs-java</module>
-        <module>azure-functions-java-worker</module>
+        <module>azure-functions-java-library</module>
         <module>azure-keyvault-java</module>
         <module>azure-batch-sdk-for-java</module>
         <module>azure-iot-sdk-java</module>
@@ -102,7 +102,7 @@
                         </group>
                         <group>
                             <title>Azure Functions</title>
-                            <packages>com.microsoft.azure.serverless.functions*</packages>
+                            <packages>com.microsoft.azure.functions*</packages>
                         </group>
                         <group>
                             <title>Azure IoT</title>
