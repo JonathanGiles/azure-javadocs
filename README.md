@@ -9,10 +9,10 @@ These are generated on a weekly basis from the GitHub repos of each of the SDKs.
 that these docs **do not necessarily represent released API** - they will represent API in its development state as it currently
 exists. Developers should refer to the documentation for each specific project to learn the APIs for that specific project.
 
-| JDK Version  | JavaDocs                                                                    | CheckStyle Report                                                                 | JavaDoc Jar Download |
-|--------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------|
-| JDK 8        | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/api/index.html)   | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/checkstyle/index.html)  | Coming soon          |
-| JDK 9+       | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/api/index.html)   | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/checkstyle/index.html)  | Coming soon          |
+| JDK Version  | JavaDocs                                                                                          | CheckStyle Report                                                                 | JavaDoc Jar Download |
+|--------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|----------------------|
+| JDK 8        | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/api/index.html)                         | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/checkstyle/index.html)  | Coming soon          |
+| JDK 9+       | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/api/index.html?overview-summary.html)   | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/checkstyle/index.html)  | Coming soon          |
 
 ### Supported Projects
 
