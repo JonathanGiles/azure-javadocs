@@ -1,0 +1,136 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-javadocs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>azure-batch-sdk-for-java</module>
+        <module>azure-cosmosdb-java</module>
+        <module>azure-data-lake-store-java</module>
+        <module>azure-event-hubs-java</module>
+        <module>azure-functions-java-library</module>
+        <module>azure-keyvault-java</module>
+   
+        <module>azure-iot-sdk-java</module>
+        <module>azure-storage-java</module>
+        <module>azure-libraries-for-java</module>
+
+        <!-- Repos that fail to compile under JDK 9 -->
+
+        <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
+        <!--<module>azure-activedirectory-library-for-java</module>-->
+        
+        <!-- <module>azure-service-bus-java</module> -->
+
+        <!-- Repos with JavaDoc errors that fail build -->
+        <!-- <module>azure-sdk-for-java</module> -->
+    </modules>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <checkstyle.config.location>checkstyle-checks.xml</checkstyle.config.location>
+        <checkstyle.violationSeverity>warning</checkstyle.violationSeverity>
+        <checkstyle.consoleOutput>false</checkstyle.consoleOutput>
+    </properties>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <additionalparam>${javadoc.opts}</additionalparam>
+                    <doctitle>Azure SDK for Java Reference Documentation</doctitle>
+                    <windowtitle>Azure SDK for Java Reference Documentation</windowtitle>
+                    <failOnError>true</failOnError>
+                    <footer>Visit the &lt;a href="http://java.ms"&gt;Azure for Java Developers&lt;/a&gt; site for more Java documentation, including quick starts, tutorials, and code samples.</footer>
+                    <linksource>false</linksource>
+                    <excludePackageNames>
+                        *.samples.*:
+                        tools.*:
+                        *.implementation.*:
+                        *.internal.*:
+                        com.microsoft.azure.storage.core.*:
+                        com.microsoft.azure.webjobs.*:
+                        com.microsoft.azure.cosmosdb.benchmark:
+                        com.microsoft.azure.storage.core:
+                        com.microsoft.azure.eventhubs.extensions.appender:
+                        com.microsoft.azure.eventhubs.impl:
+                        *.iot.common.*:
+                        *.iot.deps.*:
+                        *.iot.device.auth:
+                        *.iot.device.fileupload:
+                        *.iot.device.net:
+                        *.iot.device.transport:
+                        *.iot.device.transport.amqps:
+                        *.iot.device.transport.https:
+                        *.iot.device.transport.mqtt:
+                        *.iot.provisioning.security.hsm:
+                        *.iot.provisioning.service.auth:
+                        *.iot.provisioning.service.configs:
+                        *.iot.provisioning.service.contract:
+                        *.iot.service.auth:
+                        *.iot.service.transport.*
+                    </excludePackageNames>
+                    <groups>
+                        <group>
+                            <title>Azure Batch</title>
+                            <packages>com.microsoft.azure.batch*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Cosmos DB SQL API</title>
+                            <packages>com.microsoft.azure.cosmosdb*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Datalake Store</title>
+                            <packages>com.microsoft.azure.datalake.store*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Event Hubs</title>
+                            <packages>com.microsoft.azure.eventhubs*:com.microsoft.azure.eventprocessorhost</packages>
+                        </group>
+                        <group>
+                            <title>Azure Functions</title>
+                            <packages>com.microsoft.azure.functions*</packages>
+                        </group>
+                        <group>
+                            <title>Azure IoT</title>
+                            <packages>com.microsoft.azure.sdk.iot*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Key Vault</title>
+                            <packages>com.microsoft.azure.keyvault*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Management</title>
+                            <packages>com.microsoft.azure.management*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Service Bus</title>
+                            <packages>com.microsoft.azure.servicebus*</packages>
+                        </group>
+                        <group>
+                            <title>Azure Storage</title>
+                            <packages>com.microsoft.azure.storage*</packages>
+                        </group>
+                    </groups>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

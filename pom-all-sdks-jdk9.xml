@@ -24,7 +24,9 @@
 
         <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
         <!-- <module>azure-activedirectory-library-for-java</module> -->
-        <module>azure-service-bus-java</module>
+
+        <!-- Fails to compile due to: https://github.com/Azure/azure-service-bus-java/issues/265 -->
+        <!-- <module>azure-service-bus-java</module> -->
     </modules>
 
     <properties>
