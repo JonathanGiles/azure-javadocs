@@ -1,7 +1,7 @@
 #!/bin/sh
 
 git clone https://github.com/Azure/azure-functions-java-library.git
-git clone https://github.com/Azure/azure-service-bus-java.git
+git clone https://github.com/JonathanGiles/azure-service-bus-java.git
 git clone https://github.com/Azure/azure-data-lake-store-java.git
 git clone https://github.com/Azure/azure-event-hubs-java.git
 git clone https://github.com/Azure/azure-keyvault-java.git

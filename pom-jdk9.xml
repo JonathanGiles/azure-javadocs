@@ -22,7 +22,7 @@
         <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
         
-        <!-- <module>azure-service-bus-java</module> -->
+        <module>azure-service-bus-java</module>
 
         <!-- Repos with JavaDoc errors that fail build -->
         <!-- <module>azure-sdk-for-java</module> -->

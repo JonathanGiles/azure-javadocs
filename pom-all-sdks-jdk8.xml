@@ -16,9 +16,7 @@
         <module>azure-storage-java</module>
         <module>azure-libraries-for-java</module>
         <module>azure-activedirectory-library-for-java</module>
-
-        <!-- Fails to compile due to: https://github.com/Azure/azure-service-bus-java/issues/265 -->
-        <!--<module>azure-service-bus-java</module>-->
+        <module>azure-service-bus-java</module>
 
         <!-- Repos with JavaDoc errors that fail build -->
         <module>azure-sdk-for-java</module>
