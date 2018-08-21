@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.microsoft.azure</groupId>
+    <artifactId>azure-javadocs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>azure-batch-sdk-for-java</module>
+        <module>azure-cosmosdb-java</module>
+        <module>azure-data-lake-store-java</module>
+        <module>azure-event-hubs-java</module>
+        <module>azure-functions-java-library</module>
+        <module>azure-keyvault-java</module>
+   
+        <module>azure-iot-sdk-java</module>
+        <module>azure-storage-java</module>
+        <module>azure-libraries-for-java</module>
+
+        <!-- Repos with JavaDoc errors that fail build -->
+        <module>azure-sdk-for-java</module>
+
+        <!-- Repos that fail to compile under JDK 9 -->
+
+        <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
+        <!-- <module>azure-activedirectory-library-for-java</module> -->
+        <module>azure-service-bus-java</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+</project>
