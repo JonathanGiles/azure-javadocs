@@ -15,8 +15,9 @@
    
         <module>azure-iot-sdk-java</module>
         <module>azure-storage-java</module>
-        
-        <module>azure-libraries-for-java</module>
+
+        <!-- Fails to compile due to: https://github.com/Azure/azure-libraries-for-java/issues/547 -->
+        <!-- <module>azure-libraries-for-java</module> -->
 
         <!-- Repos with JavaDoc errors that fail build -->
         <module>azure-sdk-for-java</module>
