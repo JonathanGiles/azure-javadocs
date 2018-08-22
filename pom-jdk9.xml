@@ -12,20 +12,14 @@
         <module>azure-event-hubs-java</module>
         <module>azure-functions-java-library</module>
         <module>azure-keyvault-java</module>
-   
         <module>azure-iot-sdk-java</module>
         <module>azure-storage-java</module>
         <module>azure-libraries-for-java</module>
-
-        <!-- Repos that fail to compile under JDK 9 -->
-
+        <module>azure-service-bus-java</module>
+        <module>azure-sdk-for-java</module>
+        
         <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
         <!--<module>azure-activedirectory-library-for-java</module>-->
-        
-        <module>azure-service-bus-java</module>
-
-        <!-- Repos with JavaDoc errors that fail build -->
-        <!-- <module>azure-sdk-for-java</module> -->
     </modules>
 
     <properties>
