@@ -11,4 +11,4 @@ git clone --depth 1 https://github.com/Azure/azure-iot-sdk-java.git
 git clone --depth 1 https://github.com/AzureAD/azure-activedirectory-library-for-java.git
 git clone --depth 1 https://github.com/Azure/azure-libraries-for-java.git
 git clone --depth 1 https://github.com/Azure/azure-sdk-for-java.git
-git clone --depth 1 https://github.com/Azure/azure-cosmosdb-java.git
+git clone --depth 1 https://github.com/JonathanGiles/azure-cosmosdb-java.git
