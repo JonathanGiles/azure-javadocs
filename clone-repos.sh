@@ -2,7 +2,7 @@
 
 git clone --depth 1 https://github.com/Azure/azure-functions-java-library.git
 git clone --depth 1 https://github.com/Azure/azure-service-bus-java.git
-git clone --depth 1 https://github.com/Azure/azure-data-lake-store-java.git
+git clone --depth 1 https://github.com/JonathanGiles/azure-data-lake-store-java.git
 git clone --depth 1 https://github.com/Azure/azure-event-hubs-java.git
 git clone --depth 1 https://github.com/Azure/azure-keyvault-java.git
 git clone --depth 1 https://github.com/Azure/azure-batch-sdk-for-java.git
