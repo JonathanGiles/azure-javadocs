@@ -12,7 +12,7 @@ exists. Developers should refer to the documentation for each specific project t
 | JDK Version  | JavaDocs                                                                                          | CheckStyle Report                                                                 | JavaDoc Jar Download                                                                                 |
 |--------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | JDK 8        | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/api/index.html)                         | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/checkstyle/index.html)  | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk8/azure-javadocs-1.0.0-SNAPSHOT-javadoc.jar) |
-| JDK 9+       | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/api/index.html?overview-summary.html)   | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/checkstyle/index.html)  | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk9/azure-javadocs-1.0.0-SNAPSHOT-javadoc.jar) |
+| JDK 11       | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk11/api/index.html?overview-summary.html)   | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk11/checkstyle/index.html)  | [Here](https://azurejavadocs.z5.web.core.windows.net/jdk11/azure-javadocs-1.0.0-SNAPSHOT-javadoc.jar) |
 
 ### Supported Projects
 
