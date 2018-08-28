@@ -18,7 +18,7 @@
         <module>azure-service-bus-java</module>
 
         <!-- Fails to compile due to: https://github.com/Azure/azure-libraries-for-java/issues/547 -->
-        <!-- <module>azure-libraries-for-java</module> -->
+        <module>azure-libraries-for-java</module>
 
         <!-- Fails to compile due to: https://github.com/AzureAD/azure-activedirectory-library-for-java/issues/231 -->
         <!-- <module>azure-activedirectory-library-for-java</module> -->
